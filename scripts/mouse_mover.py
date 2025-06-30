@@ -1,7 +1,7 @@
 from threading import Lock
 import time
 import ctypes
-from global_variables import state
+from scripts.global_variables import state
 import pyautogui
 import numpy as np
 

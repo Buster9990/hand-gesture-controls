@@ -1,8 +1,8 @@
 import ctypes
-import gestures
+import scripts.gestures as gestures
 import numpy as np
 
-from global_variables import state
+from scripts.global_variables import state
 
 increase_factor = 0.66
 last_offhand_pos = None

@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
-import hands
-from global_variables import state
+import scripts.hands as hands
+from scripts.global_variables import state
 import time
 import datetime
 import json

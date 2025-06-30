@@ -1,12 +1,12 @@
 import cv2
 import time
 from threading import Thread
-import mouse_mover
-import debug_tools
-import offhand
-import hands
+import scripts.mouse_mover as mouse_mover
+import scripts.debug_tools as debug_tools
+import scripts.offhand as offhand
+import scripts.hands as hands
 
-from global_variables import state
+from scripts.global_variables import state
 # Time info
 t1 = 100 
 t2 = 1

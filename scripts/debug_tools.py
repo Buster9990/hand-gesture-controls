@@ -1,6 +1,6 @@
 import numpy as np
 import cv2
-from global_variables import state
+from scripts.global_variables import state
 
 fps_info = []
 fps_info_size = 300
