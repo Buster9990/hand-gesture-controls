@@ -100,7 +100,8 @@ def handle_mouse_movement(cam_x, cam_y):
     global mouse_future_moves, smooth_steps
     screen_x, screen_y = interpolate_position(cam_x, cam_y, state['calibration_points'])
     current = pyautogui.position()
-    if np.linalg.norm(np.array((screen_x,  screen_y)) - np.array((current.x,current.y))) > state['move_sensitivity']:
+    move_dist = np.linalg.norm(np.array((screen_x,  screen_y)) - np.array((current.x,current.y)))
+    if move_dist > state['move_sensitivity']:
         with mouse_lock:
             # mouse_future_moves = smooth_positions(current.x, current.y, screen_x, screen_y, smooth_steps, state['interval'])
             mouse_future_moves.append((screen_x, screen_y, time.time()))

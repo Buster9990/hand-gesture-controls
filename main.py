@@ -6,7 +6,7 @@ import scripts.debug_tools as debug_tools
 import scripts.offhand as offhand
 import scripts.hands as hands
 
-from scripts.global_variables import state
+from scripts.global_variables import state, settings_change
 # Time info
 t1 = 100 
 t2 = 1
@@ -21,7 +21,7 @@ print("Calibration starting. Please point your index finger to each corner of th
 mouse_move_thread = Thread(target=mouse_mover.move_mouse, daemon=True)
 mouse_move_thread.start()
 
-
+settings_change()
 
 def task():
     global t1, t2
@@ -71,11 +71,11 @@ def task():
         return True
     
     # debugging
+    debug_tools.show_clicking(frame)
     t2 = time.time()
     frames_per_second = 1.0 / (t2-t1)
     t1 = time.time()
     debug_tools.show_framerate(frame, frames_per_second)
-    debug_tools.show_clicking(frame)
     
     #img showing
     cv2.imshow("Calibrated Finger Mouse", frame)
