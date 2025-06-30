@@ -10,7 +10,7 @@ state = {
     "calibrated":         False,
     "calibration_points": [],
     "corner_names":       ["TOP-LEFT", "BOTTOM_RIGHT"],
-    "mouse_sensitivity":  20,
+    "mouse_sensitivity":  5,
     "move_sensitivity":   20,
     "is_clicking":        False,
     "mouse_move_thread":  None
