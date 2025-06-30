@@ -2,11 +2,11 @@
 
 
 a = Analysis(
-    ['main.py'],
+    ['C:\\Users\\mhamm\\Desktop\\My files\\projects\\vtuber\\main.py'],
     pathex=[],
     binaries=[],
-    datas=[],
-    hiddenimports=[],
+    datas=[('C:\\Users\\mhamm\\Desktop\\My files\\projects\\vtuber\\scripts', 'scripts/')],
+    hiddenimports=['mediapipe'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
