@@ -15,7 +15,3 @@ Mouse movement: Follows the right hand's index finger.\
 Left click: Raise the left hand's index finger fully.\
 Changing sensitibity: Peace sign  with left hand, and move the left hand to increase/decrease sensitivity as indicated by the bounding box in the camera.\
 Dragging bounding box: To change the position of where the box is, relative to the camera, just move the right index finger beyond the box in the direction wanted.
-# Development
-## Features
-- [ ]
-## Bugs
